@@ -1,3 +1,99 @@
+lassification de texte à l'échelle du cloud avec des CNNs sur Azure
+
+
+Description
+
+Ce projet implémente des approches avancées de classification de texte à l'aide de réseaux de neurones convolutifs (CNNs) déployés à l'échelle du cloud via Microsoft Azure. Plusieurs frameworks et environnements de 
+
+développement sont utilisés, notamment R, Python, Keras, et MXNet, pour explorer et comparer des approches performantes.
+
+
+Structure du projet
+
+R/mxnet : Scripts R pour la classification de texte avec MXNet, comprenant :
+
+
+crepe_model.R : Implémentation du modèle CREPE pour la classification.
+
+text_classification_cnn.R : Classification CNN appliquée aux données textuelles.
+
+text_encoder.R : Encodage des textes pour préparation au modèle.
+
+vdcnn_model.R : Implémentation du modèle VDCNN (Very Deep CNN).
+
+python/keras : Implémentations avec Keras pour la classification de texte.
+
+
+python/mxnet : Scripts Python basés sur MXNet pour la classification et l'entraînement des modèles.
+
+
+data/ : Dossier contenant les ensembles de données pour l'entraînement et le test.
+
+
+
+README.md : Documentation complète du projet.
+
+
+Fonctionnalités clés
+
+Classification de texte : Implémentation de modèles CNN pour tâches de classification.
+
+Flexibilité multilingue : Scripts développés en R et Python avec différents frameworks.
+
+Déploiement cloud : Intégration avec Azure pour exécuter les pipelines de classification à grande échelle.
+
+Comparaison des modèles : Évaluation des performances entre différents frameworks (Keras, MXNet).
+
+Installation
+
+Clonez ce dépôt :
+
+bash
+
+Copier le code
+
+git clone https://github.com/ton_profil/Classification-de-texte-CNNs-sur-Azure.git
+
+cd Classification-de-texte-CNNs-sur-Azure
+
+Installez les dépendances pour Python :
+
+bash
+
+Copier le code
+
+pip install -r requirements.txt
+
+Pour R, installez les bibliothèques nécessaires dans R/mxnet.
+
+Utilisation
+
+Avec Python :
+
+Exécutez les scripts dans python/keras ou python/mxnet pour entraîner et tester les modèles.
+
+
+
+Avec R :
+
+Lancez les scripts dans R/mxnet pour utiliser les implémentations CNN en R.
+
+
+Technologies utilisées
+
+Langages : Python, R.
+
+Frameworks : Keras, MXNet.
+
+Plateforme Cloud : Microsoft Azure.
+
+Bibliothèques de visualisation : Matplotlib, ggplot2.
+
+Contributeurs
+SALAH BEY ABDELDJALIL
+
+
+
 # Text Classification with CNNs
 
 Here we show some text classification examples with Recurrent Neural Networks and Convolutional Neural Networks. This repo contains the original code of the post [Cloud-Scale Text Classification with Convolutional Neural Networks on Microsoft Azure](https://blogs.technet.microsoft.com/machinelearning/2017/02/13/cloud-scale-text-classification-with-convolutional-neural-networks-on-microsoft-azure/) published in 2017. An repost has been published in 2019 [here](https://miguelgfierro.com/blog/2019/cloud-scale-text-classification-with-convolutional-neural-networks/).
